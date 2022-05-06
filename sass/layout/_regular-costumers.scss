@@ -1,0 +1,122 @@
+
+.costumers-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.costumers-list-icon {
+    fill: var(--icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .costumers-list-link:hover &,
+    .costumers-list-link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+.costumers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.costumers-list-item {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:479.98px) {
+
+    .costumers-list-item {
+        flex-basis: calc((100% - 30px) / 1);
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:1199px) {
+
+    .costumers-list {
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+    
+    .costumers-list-item {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    
+    .costumers-list-item {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+    .costumers-list-item {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+    .costumers-list-link {
+        width: 226px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .costumers-list {
+        justify-content: space-between;
+    }
+
+    .costumers-list-link {
+        width: 170px;
+    }
+}
+
+
+// .costumers-list {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .costumers-list-link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--icon-color);
+//     border-radius: 4px;
+//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         border-color: var(--accent-color);
+//     }
+// }
+
+// .costumers-list-icon {
+//     fill: var(--icon-color);
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     .costumers-list-link:hover &,
+//     .costumers-list-link:focus & {
+//         fill: var(--accent-color);
+//     }
+// }

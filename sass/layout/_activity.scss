@@ -1,0 +1,49 @@
+
+@media screen and (max-width:1199px) {
+    .activity.section {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .activity {
+        padding-top: 0;
+        }
+
+    .activity-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+    
+    .activity-list__item {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    .activity-list__photo-wrapper {
+        position: relative;
+    }
+    
+    .activity-list__overlay {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        background-color: rgba(47, 48, 58, 0.8);
+        font-family: var(--primary-font-family);
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--primary-text-color-theme-dark);
+    }
+}
+
+
+
+
