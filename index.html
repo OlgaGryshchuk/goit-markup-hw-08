@@ -202,8 +202,30 @@
         <ul class="team-list list">
           <li class="team-list__item">
             <picture>
-              <source srcset="../img/team-mobile-1.webp">
-              <img class="team-list__photo" src="./img/team-1.jpg" alt="team member photo">
+              <source 
+              srcset="./img/team-desktop-1.webp 1x, ./img/team-desktop-1@2x.webp 2x"
+              media="min-width:1200px"
+              type="image/webp">
+              
+              <source 
+              srcset="./img/team-desktop-1.jpg 1x, ./img/team-desktop-1@2x.jpg 2x"
+              media="min-width:1200px">
+
+              <source srcset="./img/team-tablet-1.webp 1x, ./img/team-tablet-1@2x.webp 2x" 
+              media="min-width:768px"
+              type="image/webp">
+              
+              <source srcset="./img/team-tablet-1.jpg 1x, ./img/team-tablet-1@2x.jpg 2x" 
+              media="min-width:768px">
+
+              <source srcset="./img/team-mobile-1.webp 1x, ./img/team-mobile-1@2x.webp 2x" 
+              media="max-width:767px"
+              type="image/webp">
+              
+              <source srcset="./img/team-mobile-1.jpg 1x, ./img/team-mobile-1@2x.jpg 2x" 
+              media="max-width:767px">
+
+              <img class="team-list__photo" src="./img/team-mobile-1.jpg" alt="team member photo">
             </picture>
             
             <div class="team-list__description">
@@ -246,7 +268,12 @@
           </li>
 
           <li class="team-list__item">
-            <img class="team-list__photo" src="./img/team-2.jpg" alt="" width="270" height="260">
+            <picture>
+              <source
+              srcset="">
+              <img class="team-list__photo" src="./img/team-mobile-2.jpg" alt="team member photo">
+            </picture>
+            
             <div class="team-list__description">
               <h3 class="team-list__name">Ольга Репина</h3>
               <p class="team-list__position" lang="en">Frontend Developer</p>
@@ -287,7 +314,7 @@
           </li>
 
           <li class="team-list__item">
-            <img class="team-list__photo" src="./img/team-3.jpg" alt="" width="270" height="260">
+            <img class="team-list__photo" src="" alt="" width="270" height="260">
             <div class="team-list__description">
               <h3 class="team-list__name">Николай Тарасов</h3>
               <p class="team-list__position" lang="en">Marketing</p>
@@ -328,7 +355,7 @@
           </li>
 
           <li class="team-list__item">
-            <img class="team-list__photo" src="./img/team-4.jpg" alt="" width="270" height="260">
+            <img class="team-list__photo" src="" alt="" width="270" height="260">
             <div class="team-list__description">
               <h3 class="team-list__name">Михаил Ермаков</h3>
               <p class="team-list__position" lang="en">UI Designer</p>
