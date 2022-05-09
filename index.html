@@ -47,42 +47,50 @@
             </svg>
           </button>
 
-          <ul class="mobile-menu-nav-list list">
-            <li class="mobile-menu-nav-list__item">
-              <a class="mobile-menu-nav-list__link link current" href="./index.html">Студия</a>
-            </li>
-            <li class="mobile-menu-nav-list__item">
-              <a class="mobile-menu-nav-list__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="mobile-menu-nav-list__item">
-              <a class="mobile-menu-nav-list__link link" href="">Контакты</a>
-            </li>
-          </ul>
-
-          <ul class="mobile-menu-contact-list list">
-            <li class="mobile-menu-contact-list__item">
-              <a class="mobile-menu-contact-list__link link" href=""><span class="mobile-menu-contact-list__phone-number">+38 096 111 11 11</span></a>
-            </li>
-            <li class="mobile-menu-contact-list__item">
-              <a class="mobile-menu-contact-list__link link" href=""><span class="mobile-menu-contact-list__email">info@devstudio.com</span></a>
-            </li>
-          </ul>
-
-          <ul class="mobile-menu-social-list list">
-            <li class="mobile-menu-social-list__item">
-              <a class="mobile-menu-social-list__link link" href="">Instagram</a>
-            </li>
-            <li class="mobile-menu-social-list__item">
-              <a class="mobile-menu-social-list__link link" href="">Twitter</a>
-            </li>
-            <li class="mobile-menu-social-list__item">
-              <a class="mobile-menu-social-list__link link" href="">Facebook</a>
-            </li>
-            <li class="mobile-menu-social-list__item">
-              <a class="mobile-menu-social-list__link link" href="">LinkedIn</a>
-            </li>
-          </ul>
+          <div class="mobile-menu-wrapper">
+            <ul class="mobile-menu-nav-list list">
+              <li class="mobile-menu-nav-list__item">
+                <a class="mobile-menu-nav-list__link link current" href="./index.html">Студия</a>
+              </li>
+              <li class="mobile-menu-nav-list__item">
+                <a class="mobile-menu-nav-list__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-menu-nav-list__item">
+                <a class="mobile-menu-nav-list__link link" href="">Контакты</a>
+              </li>
+            </ul>
+            
+            <div>
+              <ul class="mobile-menu-contact-list list">
+                <li class="mobile-menu-contact-list__item">
+                  <a class="mobile-menu-contact-list__link link" href=""><span class="mobile-menu-contact-list__phone-number">+38
+                      096
+                      111 11 11</span></a>
+                </li>
+                <li class="mobile-menu-contact-list__item">
+                  <a class="mobile-menu-contact-list__link link" href=""><span
+                      class="mobile-menu-contact-list__email">info@devstudio.com</span></a>
+                </li>
+              </ul>
+            
+              <ul class="mobile-menu-social-list list">
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu-social-list__item">
+                  <a class="mobile-menu-social-list__link link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           
+
         </div>
       </div>
 
@@ -175,19 +183,42 @@
         <ul class="activity-list list">
           <li class="activity-list__item">
             <div class="activity-list__photo-wrapper">
-              <img class="activity-list__photo" src="./img/activity-1.jpg" alt="" width="370" height="294">
+              <picture>
+                <source srcset="./img/activity-1.webp 1x, ./img/activity-1@2x.webp 2x"
+                  type="image/webp">
+              
+                <source srcset="./img/activity-1.jpg 1x, ./img/activity-1@2x.jpg 2x">
+              
+                <img class="activity-list__photo" src="./img/activity-1.jpg" alt="photo desktop">
+              </picture>
+            
               <p class="activity-list__overlay">Десктопные приложения</p>
             </div>
           </li>
           <li class="activity-list__item">
             <div class="activity-list__photo-wrapper">
-              <img class="activity-list__photo" src="./img/activity-2.jpg" alt="" width="370" height="294">
+              <picture>
+                <source srcset="./img/activity-2.webp 1x, ./img/activity-2@2x.webp 2x" 
+                type="image/webp">
+              
+                <source srcset="./img/activity-2.jpg 1x, ./img/activity-2@2x.jpg 2x">
+              
+                <img class="activity-list__photo" src="./img/activity-2.jpg" alt="photo mobile phone">
+              </picture>
+              
               <p class="activity-list__overlay">Мобильные приложения</p>
             </div>
           </li>
           <li class="activity-list__item">
             <div class="activity-list__photo-wrapper">
-              <img class="activity-list__photo" src="./img/activity-3.jpg" alt="" width="370" height="294">
+              <picture>
+                <source srcset="./img/activity-3.webp 1x, ./img/activity-3@2x.webp 2x" type="image/webp">
+              
+                <source srcset="./img/activity-3.jpg 1x, ./img/activity-3@2x.jpg 2x">
+              
+                <img class="activity-list__photo" src="./img/activity-3.jpg" alt="photo tablet">
+              </picture>
+              
               <p class="activity-list__overlay">Дизайнерские решения</p>
             </div>
           </li>
