@@ -456,6 +456,7 @@ img {
 
 .mobile-menu__container {
   position: relative;
+  height: 100%;
 }
 
 .mobile-menu-wrapper {
@@ -535,6 +536,7 @@ img {
 
 .mobile-menu-social-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-social-list__item:not(:last-child) {
